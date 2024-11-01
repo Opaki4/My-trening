@@ -1,4 +1,4 @@
-def send_email(massege, recipient, sender = "university.help@gmail.com"):
+def send_email(massege, recipient,*,sender = "university.help@gmail.com"):
     domains = ('.com', '.ru', '.net')
     if not (recipient.endswith(domains) and sender.endswith(domains) and ("@" in recipient and "@" in sender)):
         print(f"Невозможно отправить письмо с адреса {sender} на адрес {recipient}")
